@@ -1,0 +1,484 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>循环控制 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="类和对象.html" />
+    
+    
+    <link rel="prev" href="条件控制.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    kotlin入门
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="基础语法.html">
+            
+                <a href="基础语法.html">
+            
+                    
+                    基本类型（基础语法）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="函数.html">
+            
+                <a href="函数.html">
+            
+                    
+                    函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="条件控制.html">
+            
+                <a href="条件控制.html">
+            
+                    
+                    条件控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.4" data-path="循环控制.html">
+            
+                <a href="循环控制.html">
+            
+                    
+                    循环控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="类和对象.html">
+            
+                <a href="类和对象.html">
+            
+                    
+                    类和对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="继承.html">
+            
+                <a href="继承.html">
+            
+                    
+                    继承
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="接口.html">
+            
+                <a href="接口.html">
+            
+                    
+                    接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    kotlin block
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    kotlin 扩展
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    kotlin dsl
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    kotlin 协程
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >循环控制</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h4 id="for-&#x5FAA;&#x73AF;">For &#x5FAA;&#x73AF;</h4>
+<p>for &#x5FAA;&#x73AF;&#x53EF;&#x4EE5;&#x5BF9;&#x4EFB;&#x4F55;&#x63D0;&#x4F9B;&#x8FED;&#x4EE3;&#x5668;&#xFF08;iterator&#xFF09;&#x7684;&#x5BF9;&#x8C61;&#x8FDB;&#x884C;&#x904D;&#x5386;&#xFF0C;&#x8BED;&#x6CD5;&#x5982;&#x4E0B;:</p>
+<pre><code>for (item in collection) print(item)
+</code></pre><p>&#x5FAA;&#x73AF;&#x4F53;&#x53EF;&#x4EE5;&#x662F;&#x4E00;&#x4E2A;&#x4EE3;&#x7801;&#x5757;:</p>
+<pre><code>for (item: Int in ints) {
+    // &#x2026;&#x2026;
+}
+</code></pre><p>&#x5982;&#x4E0A;&#x6240;&#x8FF0;&#xFF0C;for &#x53EF;&#x4EE5;&#x5FAA;&#x73AF;&#x904D;&#x5386;&#x4EFB;&#x4F55;&#x63D0;&#x4F9B;&#x4E86;&#x8FED;&#x4EE3;&#x5668;&#x7684;&#x5BF9;&#x8C61;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4F60;&#x60F3;&#x8981;&#x901A;&#x8FC7;&#x7D22;&#x5F15;&#x904D;&#x5386;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x6216;&#x8005;&#x4E00;&#x4E2A; list&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x8FD9;&#x4E48;&#x505A;&#xFF1A;</p>
+<pre><code>for (i in array.indices) {
+    print(array[i])
+}
+</code></pre><p>&#x6CE8;&#x610F;&#x8FD9;&#x79CD;&quot;&#x5728;&#x533A;&#x95F4;&#x4E0A;&#x904D;&#x5386;&quot;&#x4F1A;&#x7F16;&#x8BD1;&#x6210;&#x4F18;&#x5316;&#x7684;&#x5B9E;&#x73B0;&#x800C;&#x4E0D;&#x4F1A;&#x521B;&#x5EFA;&#x989D;&#x5916;&#x5BF9;&#x8C61;&#x3002;</p>
+<p>&#x6216;&#x8005;&#x4F60;&#x53EF;&#x4EE5;&#x7528;&#x5E93;&#x51FD;&#x6570; withIndex&#xFF1A;</p>
+<pre><code>for ((index, value) in array.withIndex()) {
+    println(&quot;the element at $index is $value&quot;)
+}
+</code></pre><h4 id="while-&#x4E0E;-dowhile-&#x5FAA;&#x73AF;">while &#x4E0E; do...while &#x5FAA;&#x73AF;</h4>
+<p>while&#x662F;&#x6700;&#x57FA;&#x672C;&#x7684;&#x5FAA;&#x73AF;&#xFF0C;&#x5B83;&#x7684;&#x7ED3;&#x6784;&#x4E3A;&#xFF1A;</p>
+<pre><code>while( &#x5E03;&#x5C14;&#x8868;&#x8FBE;&#x5F0F; ) {
+  //&#x5FAA;&#x73AF;&#x5185;&#x5BB9;
+}
+</code></pre><p>do&#x2026;while &#x5FAA;&#x73AF; &#x5BF9;&#x4E8E; while &#x8BED;&#x53E5;&#x800C;&#x8A00;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x6EE1;&#x8DB3;&#x6761;&#x4EF6;&#xFF0C;&#x5219;&#x4E0D;&#x80FD;&#x8FDB;&#x5165;&#x5FAA;&#x73AF;&#x3002;&#x4F46;&#x6709;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5373;&#x4F7F;&#x4E0D;&#x6EE1;&#x8DB3;&#x6761;&#x4EF6;&#xFF0C;&#x4E5F;&#x81F3;&#x5C11;&#x6267;&#x884C;&#x4E00;&#x6B21;&#x3002;</p>
+<p>do&#x2026;while &#x5FAA;&#x73AF;&#x548C; while &#x5FAA;&#x73AF;&#x76F8;&#x4F3C;&#xFF0C;&#x4E0D;&#x540C;&#x7684;&#x662F;&#xFF0C;do&#x2026;while &#x5FAA;&#x73AF;&#x81F3;&#x5C11;&#x4F1A;&#x6267;&#x884C;&#x4E00;&#x6B21;&#x3002;</p>
+<pre><code>do {
+       //&#x4EE3;&#x7801;&#x8BED;&#x53E5;
+}while(&#x5E03;&#x5C14;&#x8868;&#x8FBE;&#x5F0F;);
+</code></pre><h4 id="&#x8FD4;&#x56DE;&#x548C;&#x8DF3;&#x8F6C;">&#x8FD4;&#x56DE;&#x548C;&#x8DF3;&#x8F6C;</h4>
+<p>Kotlin &#x6709;&#x4E09;&#x79CD;&#x7ED3;&#x6784;&#x5316;&#x8DF3;&#x8F6C;&#x8868;&#x8FBE;&#x5F0F;&#xFF1A;</p>
+<p>return&#x3002;&#x9ED8;&#x8BA4;&#x4ECE;&#x6700;&#x76F4;&#x63A5;&#x5305;&#x56F4;&#x5B83;&#x7684;&#x51FD;&#x6570;&#x6216;&#x8005;&#x533F;&#x540D;&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x3002;
+break&#x3002;&#x7EC8;&#x6B62;&#x6700;&#x76F4;&#x63A5;&#x5305;&#x56F4;&#x5B83;&#x7684;&#x5FAA;&#x73AF;&#x3002;
+continue&#x3002;&#x7EE7;&#x7EED;&#x4E0B;&#x4E00;&#x6B21;&#x6700;&#x76F4;&#x63A5;&#x5305;&#x56F4;&#x5B83;&#x7684;&#x5FAA;&#x73AF;&#x3002;
+&#x5728;&#x5FAA;&#x73AF;&#x4E2D; Kotlin &#x652F;&#x6301;&#x4F20;&#x7EDF;&#x7684; break &#x548C; continue &#x64CD;&#x4F5C;&#x7B26;&#x3002;</p>
+<pre><code>    for (i in 1..10) {
+        if (i==3) continue  // i &#x4E3A; 3 &#x65F6;&#x8DF3;&#x8FC7;&#x5F53;&#x524D;&#x5FAA;&#x73AF;&#xFF0C;&#x7EE7;&#x7EED;&#x4E0B;&#x4E00;&#x6B21;&#x5FAA;&#x73AF;
+        println(i)
+        if (i&gt;5) break   // i &#x4E3A; 6 &#x65F6; &#x8DF3;&#x51FA;&#x5FAA;&#x73AF;
+    }
+</code></pre><h4 id="break-&#x548C;-continue-&#x6807;&#x7B7E;">Break &#x548C; Continue &#x6807;&#x7B7E;</h4>
+<p>&#x5728; Kotlin &#x4E2D;&#x4EFB;&#x4F55;&#x8868;&#x8FBE;&#x5F0F;&#x90FD;&#x53EF;&#x4EE5;&#x7528;&#x6807;&#x7B7E;&#xFF08;label&#xFF09;&#x6765;&#x6807;&#x8BB0;&#x3002; &#x6807;&#x7B7E;&#x7684;&#x683C;&#x5F0F;&#x4E3A;&#x6807;&#x8BC6;&#x7B26;&#x540E;&#x8DDF; @ &#x7B26;&#x53F7;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;abc@&#x3001;fooBar@&#x90FD;&#x662F;&#x6709;&#x6548;&#x7684;&#x6807;&#x7B7E;&#x3002; &#x8981;&#x4E3A;&#x4E00;&#x4E2A;&#x8868;&#x8FBE;&#x5F0F;&#x52A0;&#x6807;&#x7B7E;&#xFF0C;&#x6211;&#x4EEC;&#x53EA;&#x8981;&#x5728;&#x5176;&#x524D;&#x52A0;&#x6807;&#x7B7E;&#x5373;&#x53EF;&#x3002;</p>
+<pre><code class="lang-kotlin">loop@ <span class="hljs-keyword">for</span> (i <span class="hljs-keyword">in</span> <span class="hljs-number">1.</span><span class="hljs-number">.100</span>) {
+    <span class="hljs-comment">// &#x2026;&#x2026;</span>
+}
+</code></pre>
+<p>&#x73B0;&#x5728;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7528;&#x6807;&#x7B7E;&#x9650;&#x5236; break &#x6216;&#x8005;continue&#xFF1A;</p>
+<pre><code class="lang-kotlin">loop@ <span class="hljs-keyword">for</span> (i <span class="hljs-keyword">in</span> <span class="hljs-number">1.</span><span class="hljs-number">.100</span>) {
+    <span class="hljs-keyword">for</span> (j <span class="hljs-keyword">in</span> <span class="hljs-number">1.</span><span class="hljs-number">.100</span>) {
+        <span class="hljs-keyword">if</span> (condition) <span class="hljs-keyword">break</span>@loop
+    }
+}
+</code></pre>
+<p>&#x6807;&#x7B7E;&#x9650;&#x5236;&#x7684; break &#x8DF3;&#x8F6C;&#x5230;&#x521A;&#x597D;&#x4F4D;&#x4E8E;&#x8BE5;&#x6807;&#x7B7E;&#x6307;&#x5B9A;&#x7684;&#x5FAA;&#x73AF;&#x540E;&#x9762;&#x7684;&#x6267;&#x884C;&#x70B9;&#x3002; continue &#x7EE7;&#x7EED;&#x6807;&#x7B7E;&#x6307;&#x5B9A;&#x7684;&#x5FAA;&#x73AF;&#x7684;&#x4E0B;&#x4E00;&#x6B21;&#x8FED;&#x4EE3;&#x3002;</p>
+<p>&#x6807;&#x7B7E;&#x5904;&#x8FD4;&#x56DE;
+Kotlin &#x6709;&#x51FD;&#x6570;&#x5B57;&#x9762;&#x91CF;&#x3001;&#x5C40;&#x90E8;&#x51FD;&#x6570;&#x548C;&#x5BF9;&#x8C61;&#x8868;&#x8FBE;&#x5F0F;&#x3002;&#x56E0;&#x6B64; Kotlin &#x7684;&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x88AB;&#x5D4C;&#x5957;&#x3002; &#x6807;&#x7B7E;&#x9650;&#x5236;&#x7684; return &#x5141;&#x8BB8;&#x6211;&#x4EEC;&#x4ECE;&#x5916;&#x5C42;&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x3002; &#x6700;&#x91CD;&#x8981;&#x7684;&#x4E00;&#x4E2A;&#x7528;&#x9014;&#x5C31;&#x662F;&#x4ECE; lambda &#x8868;&#x8FBE;&#x5F0F;&#x4E2D;&#x8FD4;&#x56DE;&#x3002;&#x56DE;&#x60F3;&#x4E00;&#x4E0B;&#x6211;&#x4EEC;&#x8FD9;&#x4E48;&#x5199;&#x7684;&#x65F6;&#x5019;&#xFF1A;</p>
+<pre><code class="lang-kotlin"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">foo</span><span class="hljs-params">()</span> {</span>
+    ints.forEach {
+        <span class="hljs-keyword">if</span> (it == <span class="hljs-number">0</span>) <span class="hljs-keyword">return</span>
+        print(it)
+    }
+}
+</code></pre>
+<p>&#x8FD9;&#x4E2A; return &#x8868;&#x8FBE;&#x5F0F;&#x4ECE;&#x6700;&#x76F4;&#x63A5;&#x5305;&#x56F4;&#x5B83;&#x7684;&#x51FD;&#x6570;&#x5373; foo &#x4E2D;&#x8FD4;&#x56DE;&#x3002; &#xFF08;&#x6CE8;&#x610F;&#xFF0C;&#x8FD9;&#x79CD;&#x975E;&#x5C40;&#x90E8;&#x7684;&#x8FD4;&#x56DE;&#x53EA;&#x652F;&#x6301;&#x4F20;&#x7ED9;&#x5185;&#x8054;&#x51FD;&#x6570;&#x7684; lambda &#x8868;&#x8FBE;&#x5F0F;&#x3002;&#xFF09; &#x5982;&#x679C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x4ECE; lambda &#x8868;&#x8FBE;&#x5F0F;&#x4E2D;&#x8FD4;&#x56DE;&#xFF0C;&#x6211;&#x4EEC;&#x5FC5;&#x987B;&#x7ED9;&#x5B83;&#x52A0;&#x6807;&#x7B7E;&#x5E76;&#x7528;&#x4EE5;&#x9650;&#x5236; return&#x3002;</p>
+<pre><code class="lang-kotlin"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">foo</span><span class="hljs-params">()</span> {</span>
+    ints.forEach lit@ {
+        <span class="hljs-keyword">if</span> (it == <span class="hljs-number">0</span>) <span class="hljs-keyword">return</span>@lit
+        print(it)
+    }
+}
+</code></pre>
+<p>&#x73B0;&#x5728;&#xFF0C;&#x5B83;&#x53EA;&#x4F1A;&#x4ECE; lambda &#x8868;&#x8FBE;&#x5F0F;&#x4E2D;&#x8FD4;&#x56DE;&#x3002;&#x901A;&#x5E38;&#x60C5;&#x51B5;&#x4E0B;&#x4F7F;&#x7528;&#x9690;&#x5F0F;&#x6807;&#x7B7E;&#x66F4;&#x65B9;&#x4FBF;&#x3002; &#x8BE5;&#x6807;&#x7B7E;&#x4E0E;&#x63A5;&#x53D7;&#x8BE5; lambda &#x7684;&#x51FD;&#x6570;&#x540C;&#x540D;&#x3002;</p>
+<pre><code class="lang-kotlin"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">foo</span><span class="hljs-params">()</span> {</span>
+    ints.forEach {
+        <span class="hljs-keyword">if</span> (it == <span class="hljs-number">0</span>) <span class="hljs-keyword">return</span>@forEach
+        print(it)
+    }
+}
+</code></pre>
+<p>&#x6216;&#x8005;&#xFF0C;&#x6211;&#x4EEC;&#x7528;&#x4E00;&#x4E2A;&#x533F;&#x540D;&#x51FD;&#x6570;&#x66FF;&#x4EE3; lambda &#x8868;&#x8FBE;&#x5F0F;&#x3002; &#x533F;&#x540D;&#x51FD;&#x6570;&#x5185;&#x90E8;&#x7684; return &#x8BED;&#x53E5;&#x5C06;&#x4ECE;&#x8BE5;&#x533F;&#x540D;&#x51FD;&#x6570;&#x81EA;&#x8EAB;&#x8FD4;&#x56DE;</p>
+<pre><code class="lang-kotlin"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">foo</span><span class="hljs-params">()</span> {</span>
+    ints.forEach(<span class="hljs-function"><span class="hljs-title">fun</span><span class="hljs-params">(value: <span class="hljs-type">Int</span>)</span> {</span>
+        <span class="hljs-keyword">if</span> (value == <span class="hljs-number">0</span>) <span class="hljs-keyword">return</span>
+        print(value)
+    })
+}
+</code></pre>
+<p>&#x5F53;&#x8981;&#x8FD4;&#x4E00;&#x4E2A;&#x56DE;&#x503C;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x89E3;&#x6790;&#x5668;&#x4F18;&#x5148;&#x9009;&#x7528;&#x6807;&#x7B7E;&#x9650;&#x5236;&#x7684; return&#xFF0C;&#x5373;</p>
+<pre><code class="lang-kotlin"><span class="hljs-keyword">return</span>@a <span class="hljs-number">1</span>
+</code></pre>
+<p>&#x610F;&#x4E3A;&quot;&#x4ECE;&#x6807;&#x7B7E; @a &#x8FD4;&#x56DE; 1&quot;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&quot;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x6807;&#x7B7E;&#x6807;&#x6CE8;&#x7684;&#x8868;&#x8FBE;&#x5F0F; (@a 1)&quot;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="条件控制.html" class="navigation navigation-prev " aria-label="Previous page: 条件控制">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="类和对象.html" class="navigation navigation-next " aria-label="Next page: 类和对象">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"循环控制","level":"1.2.4","depth":2,"next":{"title":"类和对象","level":"1.2.5","depth":2,"path":"kotlin入门/类和对象.md","ref":"kotlin入门/类和对象.md","articles":[]},"previous":{"title":"条件控制","level":"1.2.3","depth":2,"path":"kotlin入门/条件控制.md","ref":"kotlin入门/条件控制.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"kotlin入门/循环控制.md","mtime":"2022-04-01T07:23:54.742Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-04-01T07:47:46.285Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
