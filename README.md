@@ -59,7 +59,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
 ```
 
-很明显，当当一个adapter 的工作量就比过 上方 kotlin 实现。
+很明显，单单一个adapter 的工作量就比过 上方 kotlin 实现。
 
 
 
