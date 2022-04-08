@@ -19,6 +19,9 @@
   - [接口](kotlin入门/接口.md)
 
 * [kotlin block](block/READEME.md)
+  * [lambda表达式](lambda.md)
+  * [Typealias](typealias.md)
+
 * [kotlin 扩展](扩展/READEME.md)
 * [kotlin dsl]()
 * [kotlin 协程]()
